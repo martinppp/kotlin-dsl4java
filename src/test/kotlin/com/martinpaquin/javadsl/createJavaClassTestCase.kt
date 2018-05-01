@@ -129,6 +129,22 @@ class JavaDslTestJUnit5 {
                                 }
                             }
                         }
+                        doStmt {
+                            condition {
+                                binaryEpression {
+                                    left {
+                                        nameExpression("this.ward"){}
+                                    }
+                                    operator(BinaryExprOperator.EQUALS)
+                                    right {
+                                        nameExpression("\"floor 1\""){}
+                                    }
+                                }
+                            }
+                            body {
+
+                            }
+                        }
                     }
                 }
             }
